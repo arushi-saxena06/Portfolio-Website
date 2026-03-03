@@ -1,0 +1,261 @@
+html,body{
+	height:100%;
+	margin:0;
+}
+body{
+	min-height: 100vh;
+	background-color:pink;
+	display:flex;
+	flex-direction:column;
+}
+.container{
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	margin-bottom:2px;
+}
+.left-img{
+	height: 200px;
+	width: 200px;
+	margin-right:40px;
+}
+.right-text{
+	font-size:20px;
+	color:deeppink;
+	font-family: "Segoe Print", cursive;
+	margin-right:20px;
+	line-height: 1.4;
+}
+.subtitle{
+	display:block;
+	font-size:22px;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-family:Inter;
+}
+.container2{
+	margin-bottom:50px;
+}
+
+button.b1:hover, button.b2:hover, button.b3:hover{
+	color:hotpink;
+	transform:scale(1.05);
+}
+.cards{
+	display:flex;
+	gap:30px;
+	justify-content:center;
+	margin-bottom: 40px;
+}
+
+button.b1, button.b2, button.b3{
+	border-color:mediumvioletred;
+	color: mediumvioletred;
+	font-family:"Segoe Print", cursive;
+	padding:20px 20px;
+	font-size:20px;
+	height: 300px;
+	width: 300px;
+	font-weight:bold;
+
+	background-size:cover;
+	background-position:center;
+	position:relative;
+	transition:
+		transform 0.3s ease;
+}
+.b1{
+	
+	background-image:url("i1.png");
+}
+.b2{
+	background-image:url("i2.png");
+}
+.b3{
+	background-image:url("i3.png");
+}
+
+.container3{
+	display:flex;
+	align-items:center;
+	width:100%;
+	height:35px;
+	background-color:mediumvioletred;
+	color:white;
+	justify-content: space-between;
+
+	margin-top: auto;;
+}
+.right{
+	display:flex;
+	align-items:center;
+	gap:15px;
+	margin-right:20px;
+}
+
+a.b4,a.b5,a.b6{
+
+	background-position:center;
+	border-radius:50%;
+	border:none;
+	background-repeat:no-repeat;
+	height:30px;
+	width:30px;
+	transition:transform 0.3s ease;
+}
+.b4{
+	background-image:url("download.png");
+	background-size:150%;
+}
+.b5{
+	background-image:url("linkedin3.png");
+	background-size:102%;
+}
+.b6{
+	background-image:url("git.png");
+	background-size:110%;
+}
+a.b4:hover,a.b5:hover,a.b6:hover{
+	transform:scale(1.08);
+}
+.left{
+	font-size: 16px;
+	margin-left:10px;
+}
+
+		
+.overlay{
+	position:fixed;
+	top:0;
+	left:0;
+
+	width:100%;
+	height:100%;
+	
+	background:rgba(0,0,0,0.5);
+	opacity:0;
+	pointer-events:none;
+	z-index:5;
+	
+	transition: opacity 0.3s ease;
+}
+.overlay.active{
+	opacity:1;
+	pointer-events:auto;
+}
+
+.card.active .card-inner {
+	transform: rotateY(180deg);
+}
+.card-front,
+.card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.card-back {
+	transform: rotateY(-180deg);
+	background-color:mediumvioletred;
+	color:white;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.card {
+	width: 300px;
+	height: 300px;
+	perspective:1000px;
+	position:relative;}
+
+.card.active{
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%) scale(1.5);
+	z-index:10;
+}
+.card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+}
+
+.card.active .front-text{
+	opacity:0;
+	visibility: hidden;
+}
+.front-text{
+	transition: opacity 0.3s ease;
+}
+
+.card-heading{
+	display:block;
+	margin-left:20px;
+	margin-top:30px;
+	font-family:Poppins;
+}
+.right-text .sub2{
+	display:block;
+	color:#79305a;
+	font-size:18px;
+	font-family: "Source Sans 3", system-ui, sans-serif;
+	letter-spacing: 0.3px;
+}
+
+.card-3{
+	font-size: 14px;}
+
+
+
+.highlight-container {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 17px;
+}
+
+.highlight-btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #ff69b4, #ff1493);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 5px #ff69b4; }
+    50% { box-shadow: 0 0 20px #ff1493; }
+    100% { box-shadow: 0 0 5px #ff69b4; }
+}
+
+.highlight-btn:hover {
+    transform: scale(1.08);
+    transition: 0.3s;
+}
+
+.highlight-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    margin-top: 0;
+}
+.highlight-content.open {
+    margin-top: 15px;
+}
+
+.highlight-content ul {
+    list-style: none;
+    padding: 0;
+    color: #8b005d;
+    font-weight: 500;
+}
+
+.highlight-content li {
+    padding: 8px;
+}

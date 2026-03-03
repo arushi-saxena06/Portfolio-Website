@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <!-- INTRO SECTION -->
+    <div class="container">
+        <img src="file.png" alt="sorry img not found, have a cookie🍪" class="left-img">
+
+        <p class="right-text">
+            Hello, I am Arushi Saxena🌺
+            <span class="subtitle">
+                A cybersecurity enthusiast with a strong interest in ethical hacking, digital security, and AI applications in cybersecurity!!
+            </span>
+            <span class="sub2">
+                Skills: Cybersecurity | OSINT & Threat Analysis | CTFs | Web Development(HTML,CSS,JavaScript)
+            </span>
+        </p>
+    </div>
+
+    <!-- ✨ HIGHLIGHTS SECTION (FIXED) -->
+    <div class="highlight-container">
+        <button class="highlight-btn" onclick="toggleHighlights()">
+            ✨ Highlights ✨
+        </button>
+
+        <div class="highlight-content" id="highlightContent">
+            <ul>
+                <li>🏆 2nd Prize – ByteBeat CTF Competition</li>
+                <li>🌐 Associate Lead – WiCyS Student Chapter</li>
+                <li>🚀 Lead and organize campus-level CTFs & cybersecurity workshops</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CARDS SECTION -->
+    <div class="container2">
+        <div class="cards">
+
+            <!-- INTERNSHIPS -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <button class="b1">
+                            <span class="front-text">Click to view my Internships</span>
+                        </button>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-b1">
+                            <span class="card-heading">INTERNSHIPS</span>
+                            <ul>
+                                <li>AICTE-EDUSKILLS Virtual Internship - Ethical Hacking</li>
+                                <li>AICTE-EDUSKILLS Virtual Internship - AI/ML</li>
+                                <li>InLighnX Global Pvt. Ltd. - Ethical Hacking</li>
+                                <li>Agnirva Virtual Space Internship (AICTE Recognized)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECTS -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <button class="b2">
+                            <span class="front-text">Click to view my Projects</span>
+                        </button>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-b2">
+                            <span class="card-heading">PROJECTS</span>
+                            <ul>
+                                <li><a href="https://github.com/arushi-saxena06/Fake-news-detection-ML">Fake-news-detection-system (ML Model)</a></li>
+                                <li><a href="https://github.com/arushi-saxena06/Honeypot-For-IoT-Devices">Honeypot-for-IOT-Devices</a></li>
+                                <li><a href="https://github.com/arushi-saxena06/hash-cracker-tool">Hash-Cracker-Tool</a></li>
+                                <li><a href="https://github.com/arushi-saxena06/Advanced-port-scanner">Advanced-Port-Scanner</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CERTIFICATIONS -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <button class="b3">
+                            <span class="front-text">Click to view my Certifications</span>
+                        </button>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-b3">
+                            <span class="card-heading">CERTIFICATIONS</span>
+                            <ul>
+                                <span class="card-3">
+                                    <li>IBM AI Fundamentals Badge - IBM SkillsBuild</li>
+                                    <li>NPTEL: Programming in Java, OS, OOP</li>
+                                    <li>HACKERRANK: Python, SQL</li>
+                                    <li>DELOITTE AUSTRALIA: Cyber Job Simulation</li>
+                                    <li>IIRS-ISRO: Geo-data Sharing and CyberSecurity</li>
+                                </span>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container3">
+        <div class="left">
+            <a href="mailto:arushisaxena612@gmail.com">
+                Contact : arushisaxena612@gmail.com
+            </a>
+        </div>
+
+        <div class="right">
+            <a href="RESUME_ARUSHI_SAXENA.pdf" class="b4"></a>
+            <a href="https://www.linkedin.com/in/arushi-saxena-74b024324/" class="b5"></a>
+            <a href="https://github.com/arushi-saxena06" class="b6"></a>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        function toggleHighlights() {
+    		const content = document.getElementById("highlightContent");
+
+			if (content.style.maxHeight) {
+				content.style.maxHeight = null;
+				content.classList.remove("open");
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+				content.classList.add("open");
+			}
+		}
+    </script>
+
+</body><script src="script.js"></script></body>
+</html>
