@@ -66,13 +66,13 @@ button.b1, button.b2, button.b3{
 }
 .b1{
 	
-	background-image:url("i1.png");
+	background-image:url("images/i1.png");
 }
 .b2{
-	background-image:url("i2.png");
+	background-image:url("images/i2.png");
 }
 .b3{
-	background-image:url("i3.png");
+	background-image:url("images/i3.png");
 }
 
 .container3{
@@ -104,15 +104,15 @@ a.b4,a.b5,a.b6{
 	transition:transform 0.3s ease;
 }
 .b4{
-	background-image:url("download.png");
+	background-image:url("images/download.png");
 	background-size:150%;
 }
 .b5{
-	background-image:url("linkedin3.png");
+	background-image:url("images/linkedin3.png");
 	background-size:102%;
 }
 .b6{
-	background-image:url("git.png");
+	background-image:url("images/git.png");
 	background-size:110%;
 }
 a.b4:hover,a.b5:hover,a.b6:hover{
